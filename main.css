@@ -1,0 +1,106 @@
+/* import a web font */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fredoka+One&display=swap');
+
+/***** Build Helpers ***/
+
+/* give element a border to see their boundaries */
+/*  *{
+    border: 1px solid mediumvioletred;
+    }
+*/
+    /* shrink images for placement */
+    img {
+        width:100px;
+    }
+    /
+/* General styling */
+body {
+    background-color: snow;
+    color: slategray;
+    margin: 20px 0;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    }
+h1,h2,h3,h4,h5,h6 {
+    margin:0px;
+}
+h2 {
+    font-size: 1em;
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+/* Header CSS */
+header {
+    width: 90% ;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+    /*Style the nested Div elements in Header */
+    header div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        margin-bottom: 20px;
+    }
+    /*Style the nested H1 elements in Header */
+    header h1 {
+        text-align: left;
+                }
+    /*Style the nested  LAST Div element in Header */
+    header div:last-child {
+        display: flex;
+        align-items: center;
+        
+                        }
+/* This is container CSS */
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;  
+            }
+    /* Aside/Nav CSS */
+    aside {
+        display: flex;
+        flex-basis: 15%;
+        min-width:15%;
+        justify-content: center;
+        align-items: center;
+        }
+    aside ul {
+        padding: 0px;
+        }
+    aside ul li {
+        list-style: none;
+        text-align: left;
+        font-size: 1.5em;
+        }
+
+    /* Main */
+        main {
+            width:85%;
+            flex-basis: 85%;
+        }
+        
+        div[class$='row'] {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
+            }
+        /* Top Row CSS */
+            .top-row img {
+                width: 100%;
+            }
+        /* Middle  Row CSS */
+            .middle-row img{
+                width: 49%;
+            }
+        /* Bottom Row CSS */
+            .bottom-row  img {
+                width: 32%;
+            }
+
